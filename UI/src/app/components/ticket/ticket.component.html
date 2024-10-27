@@ -1,0 +1,17 @@
+<div>
+  <p>Email: probni-email&#64;gmail.com</p>
+  <p>Lozinka: proba123!</p>
+
+  <p>All tickets generated: {{ allTicketsGenerated }}</p>
+  <form (submit)="createNewTicket()">
+    <label for="Vatin">Vatin:</label>
+    <input type="text" id="Vatin" name="Vatin" [(ngModel)]="Vatin">
+    <label for="Firstname">Firstname:</label>
+    <input type="text" id="Firstname" name="Firstname" [(ngModel)]="Firstname">
+    <label for="Lastname">Lastname:</label>
+    <input type="text" id="Lastname" name="Lastname" [(ngModel)]="Lastname">
+    <button type="submit">Create</button>
+  </form>
+  <qrcode [qrdata]="qrcode || ''"></qrcode>
+</div>
+
