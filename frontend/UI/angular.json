@@ -21,14 +21,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ui",
+            "outputPath": "dist/UI", // Ensure this matches your Dockerfile
             "index": "src/index.html",
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "main": "src/main.ts", // Changed 'browser' to 'main'
+            "polyfills": "src/polyfills.ts", // Make sure this file exists and is properly configured
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -60,13 +58,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              //"fileReplacements": [
-              //  {
-              //    "replace": "src/app/environments/environment.ts",
-              //    "with": "src/app/environments/environment.development.ts"
-              //  }
-              //]
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"

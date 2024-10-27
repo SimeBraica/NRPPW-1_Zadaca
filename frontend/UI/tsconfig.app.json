@@ -6,9 +6,11 @@
     "types": []
   },
   "files": [
-    "src/main.ts"
+    "src/main.ts",
+    "src/polyfills.ts" // Include polyfills file for compilation
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.ts", // Include all TypeScript files in src
+    "src/**/*.d.ts" // Include all declaration files
   ]
 }
