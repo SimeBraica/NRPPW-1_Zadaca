@@ -31,7 +31,7 @@ builder.Services.AddScoped<TicketService>();
 // Configure CORS policy.
 builder.Services.AddCors(options => {
     options.AddPolicy(myCors, policy => {
-        policy.WithOrigins("http://localhost:4200")
+        policy.WithOrigins("https://nrppw-1-zadaca.onrender.com")
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
