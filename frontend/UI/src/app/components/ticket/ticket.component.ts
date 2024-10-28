@@ -35,7 +35,7 @@ export class TicketComponent implements OnInit {
 
     try {
       const response = await this.ticketService.createTicket(newTicket);
-      this.qrcode = "localhost:4200/ticket-details/" + (response ? response.toString() : '');
+      this.qrcode = "https://nrppw-1-zadaca.onrender.com/ticket-details/" + (response ? response.toString() : '');
     } catch (error) {
       console.error('Error creating ticket:', error);
     }
