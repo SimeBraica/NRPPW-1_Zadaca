@@ -23,10 +23,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/UI", // Ensure this matches your Dockerfile
+            "outputPath": "dist/UI", 
             "index": "src/index.html",
-            "main": "src/main.ts", // Changed 'browser' to 'main'
-            "polyfills": "src/polyfills.ts", // Make sure this file exists and is properly configured
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts", 
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
