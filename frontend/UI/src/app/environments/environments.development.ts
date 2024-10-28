@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  restAPI: 'http://localhost:8080',
+  restAPI: 'https://nrppw-1-zadaca.onrender.com/api/',
 };

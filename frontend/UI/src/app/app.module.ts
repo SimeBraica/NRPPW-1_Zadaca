@@ -24,7 +24,7 @@ import { AuthModule } from '@auth0/auth0-angular'
       domain: 'dev-fbr2yb3xvzwpcqbi.us.auth0.com',
       clientId: '84z25j4UljFTKmIo0vGyBMuQX7KUXoFr',
       authorizationParams: {
-        redirect_uri: 'http://localhost:4200',
+        redirect_uri: 'https://nrppw-1-zadaca.onrender.com',
         audience: 'https://dev-fbr2yb3xvzwpcqbi.us.auth0.com/api/v2/'
       },
       useRefreshTokens: true,
